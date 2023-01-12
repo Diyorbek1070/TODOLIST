@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO LIST</title>
+    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="delete_all" id="delete-answer">
+    <img src="./images/question-mark-svgrepo-com.svg" alt="question" class="delete_all__img">
+    <h2 class="delete_all__heading">Are you sure to delete this item?</h2>
+    <div>
+      <button class="delete_all__btn1" id="gelete-btn1">Yes</button>
+      <button class="delete_all__btn2"  id="gelete-btn2">No</button>
+    </div>
+ </div>
+    <div class="todolist-container" id="todolist-container">
+       <h3 id="container-heading">Please Enter more than 2 characters!</h3>
+        <div class="todolist__form-wrapper">
+          <form id="todolist-form">
+            <input id="todolist-adder-input" class="todolist__form-input" type="text" placeholder="Add todo" required="">
+            <img src="./images/icons8-cancel-48.png" alt="X" class="todolist-form__delete" id="input-delete">
+            <button class="todolist__form-submit" type="submit"> <i class="fas fa-plus"></i> Create</button>
+          </form>
+          <button class="todolist__form-delete-all" id="delete-all">Delete All</button>
+        </div>
+        <ul class="todolist-collection" id="todolist-collection"></ul>
+      </div>
+      <script src="./script/app.js"></script>
+</body>
+</html>
